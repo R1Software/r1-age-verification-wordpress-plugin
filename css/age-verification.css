@@ -1,0 +1,381 @@
+/**
+ * Plugin Name: R1 Age Verification - CSS
+ * Plugin URI: https://r1software.com/age-verification
+ * Description: A plugin to add an age verification overlay to your WordPress site.
+ * Version: 1.0
+ * Author: R1 Software
+ * Author URI: https://r1software.com
+ */
+ #R1_PORTAL {
+    background-color: rgb(71, 43, 27);
+    font-family: Roboto Slab;
+    color: #fff;
+    overflow: hidden;
+    display: none;
+}
+.r1-age-verification-item-image-image {
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("../images/default.jpg");
+}
+
+.r1-age-verification-item-image-imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.r1-age-verification-item-allow-date-container {
+    display: flex;
+    justify-content: space-between
+}
+
+@media (max-width:465px) {
+    .r1-age-verification-item-allow-date-container {
+        flex-wrap: wrap;
+    }
+}
+
+.r1-age-verification-item-allow-date-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 16px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    line-height: 20px;
+    transition: .3s ease all;
+}
+
+.r1-age-verification-item-allow-date-input:nth-child(2) {
+    margin: 0 10px
+}
+
+@media (max-width:465px) {
+    .r1-age-verification-item-allow-date-input:nth-child(2) {
+        margin: 10px 0;
+    }
+}
+
+.r1-age-verification-item-allow-date-input::placeholder {
+    color: currentColor;
+    opacity: .5
+}
+
+@media (max-width:465px) {
+    .r1-age-verification-item-allow-date-input {
+        margin: 0;
+    }
+}
+
+.r1-age-verification-item-allow-date-submit {
+    padding: 12px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 32px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    transition: .3s ease background-color;
+    background-color: rgb(20, 109, 45);
+    font-size: 17px;
+}
+
+.r1-age-verification-item-allow-buttons-container {
+    display: flex;
+    margin: -10px;
+}
+
+.r1-age-verification-item-allow-buttons-button {
+    position: relative;
+    width: 50%;
+    margin: 10px;
+    padding: 12px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    top: 0;
+    transition: .3s ease top;
+}
+
+.r1-age-verification-item-allow-buttons-button:hover {
+    top: -2px;
+}
+
+.r1-age-verification-item-allow-buttons-yes,
+.r1-age-verification-item-allow-buttons-no {
+    display: block;
+}
+
+.r1-age-verification-item-allow-buttons-no {
+    border: 1px solid;
+}
+
+.r1-age-verification-item-allow-container {
+    display: flex;
+    margin-top: 32px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.r1-age-verification-item-allow-form {
+    width: 100%
+}
+
+.r1-age-verification-item-allow-error {
+    font-size: 11px;
+    color: #f00;
+    margin-top: 4px;
+}
+
+.r1-age-verification-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.r1-age-verification-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: rgb(71, 43, 27, 0.5);
+    padding: 40px 20px;
+}
+
+.r1-age-verification-item-logo {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.r1-age-verification-item-logoContainer {
+    overflow: hidden;
+    max-width: 120px;
+    max-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0
+}
+
+.r1-age-verification-item-message {
+    line-height: 1.15;
+    width: 100%;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.r1-age-verification-item-caption {
+    line-height: 1.25;
+    margin-top: 16px;
+    width: 100%;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+
+.r1-age-verification-item-additionalInfo {
+    display: block;
+    margin-top: 20px;
+    line-height: 1.25;
+    width: 100%;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+
+.r1-age-verification-item-image {
+    display: block;
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.r1-age-verification-item-error {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(17, 17, 17, 0.9);
+    top: -10px;
+    padding: 20px;
+    transition: .3s ease all;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+.r1-age-verification-item-errorShow {
+    opacity: 1;
+    top: 0
+}
+
+.r1-age-verification-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    z-index: 2147483638;
+}
+
+.r1-age-verification-popup-container:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1
+}
+
+.r1-age-verification-popup-inner {
+    width: 100%;
+    max-width: 920px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+    min-height: 400px;
+    display: flex;
+    margin: 0 20px;
+}
+
+.r1-age-verification-popup-show {
+    display: flex;
+}
+
+.r1-age-verification-popup-close {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    right: 20px;
+    top: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.r1-age-verification-popup-close svg {
+    fill: rgba(0, 0, 0, 0.2);
+    transition: .3s ease all;
+}
+
+.r1-age-verification-popup-close:hover svg {
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+.r1-age-verification-popup-message {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #111;
+}
+
+.r1-age-verification-popup-content {
+    overflow: auto;
+    max-height: calc(100% - 72px);
+    margin-top: 44px;
+}
+
+input.r1-age-verification-item-allow-year-input {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    border-color: rgba(255, 243, 230, 0.4);
+    color: rgb(255, 243, 230);
+    background-color: rgba(255, 243, 230, 0.05);
+    font-size: 17px;
+    outline: none;
+}
+.r1-age-verification-item-allow-year-submit {
+    padding: 12px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 32px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    transition: .3s ease background-color;
+    background-color: rgb(20, 109, 45);
+    font-size: 17px;
+}
+
+.kiErDg {
+    -webkit-font-smoothing: antialiased;
+}
+
+.sJhos {
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.egiTHk {
+    display: block; 
+    background-image: url("../images/overlay.jpg"); 
+    background-color: rgba(24, 24, 24, 0.7);
+    position: absolute;
+    inset: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+.djWGwD {
+    position: absolute;
+    inset: 0px;
+    z-index: 2;
+}
