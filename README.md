@@ -9,7 +9,6 @@ This WordPress plugin adds an age verification overlay to your website, ensuring
 - Customizable default image in the age verification form
 - Option to set the minimum age threshold for content access
 - Option to set the duration of the age verification cookie
-- Displays the site logo in the age verification form
 
 ## Installation
 
